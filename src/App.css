@@ -1,0 +1,67 @@
+@media (max-width: 400px) {
+  .header-contact {
+    @apply h-[8vh];
+  }
+  .header2 {
+    @apply h-[8vh];
+  }
+  .email {
+    @apply w-[60vw];
+    @apply text-sm;
+  }
+  .icons {
+    @apply w-[20vw];
+  }
+}
+.nav.active {
+  @apply border-b-[2px] border-[#00558E];
+  @apply text-[#00558E];
+}
+.navs.active {
+  @apply border-b-[2px] border-[#EDC954] w-[6vw];
+  @apply text-[white];
+}
+.OverlayModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalContent {
+  background-color: #ffffff;
+
+  border-radius: 5px;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 170px solid transparent;
+  border-right: 170px solid transparent;
+  border-bottom: 50px solid #00558e;
+  rotate: 180deg;
+}
+
+.triangle:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #00558e;
+}
+
+.sqr {
+  position: relative;
+  width: 25vw;
+  height: 230px;
+  background: #00558e;
+}
